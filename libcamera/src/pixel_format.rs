@@ -5,7 +5,7 @@ use libcamera_sys::*;
 
 /// Represents `libcamera::PixelFormat`, which itself is a pair of fourcc code and u64 modifier as defined in `libdrm`.
 #[derive(Clone, Copy)]
-pub struct PixelFormat(pub(crate) libcamera_pixel_format_t);
+pub struct PixelFormat(pub libcamera_pixel_format_t);
 
 impl PixelFormat {
     /// Constructs new [PixelFormat] from given fourcc code and modifier.
